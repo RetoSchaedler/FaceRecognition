@@ -12,4 +12,4 @@ pip3 install face-recognition
 pip3 install opencv-python
 pip3 install numpy
 ```
-![Demo](https://github.com/RetoSchaedler/FaceRecognition/RecPic.png)
+![Demo](https://github.com/RetoSchaedler/FaceRecognition/raw/main/RecPic.png)
