@@ -5,7 +5,7 @@ Save in the folder refFaces/ one jpg File per Person. The file name is used as f
 
 If you have error messages, try:
 ```
-pip3 install face-recognition
+pip3 install face_recognition
 pip3 install opencv-python
 pip3 install numpy
 
