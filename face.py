@@ -4,14 +4,16 @@ import numpy as np
 import glob
 
 # Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+video_capture = cv2.VideoCapture(0)
+#video_capture = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+
 
 known_face_encodings=[]
 known_face_names=[]
 
 # Scan Folder for Reference Faces. The jpg file name is used as face name.
 for pic in glob.glob('./refFaces/*.jpg'):
-    name=pic.split('\\')[-1][:-4]
+    name=pic.replace('/','\\').split('\\')[-1][:-4]
     image=(face_recognition.load_image_file(pic))
     known_face_encodings.append(face_recognition.face_encodings(image)[0])
     known_face_names.append(name)
