@@ -1,7 +1,7 @@
 # FaceRecognition
 ## Demo how to use the face_recognition Python Module
 
-Save in the folder /refFaces/ one jpg File per Person. The file name is used as face name.
+Save in the folder refFaces/ one jpg File per Person. The file name is used as face name.
 
 If you have error messages, try:
 ```
